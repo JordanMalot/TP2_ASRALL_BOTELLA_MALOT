@@ -1,0 +1,35 @@
+/* General */
+body {
+    background: url("../images/background_pattern.png") repeat;
+}
+
+.panel h4 {
+    color: white;
+}
+
+/* Navigation */
+
+nav ul li {
+    transition: background linear 0.3s;
+}
+
+nav ul li:hover {
+    background: #ebe4e4;
+}
+
+.body-content {
+    background: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Index.html */
+.carousel-inner h2 {
+    color: white;
+    border: 1px solid white;
+}
+
+.carousel-inner h2 small {
+    color: white;
+}
+
