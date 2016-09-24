@@ -17,6 +17,12 @@ nav ul li:hover {
     background: #ebe4e4;
 }
 
+nav ul li.active {
+    background: #ebe4e4;
+}
+
+/* body content */
+
 .body-content {
     background: white;
     padding-left: 30px;
