@@ -39,7 +39,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
+                    <li>
                         <a href="../index.html">Accueil</a>
                     </li>
                     <li>
@@ -57,7 +57,7 @@
                     <li>
                         <a href="gallerie.html">Gallerie</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="contact.html">Nous-contacter</a>
                     </li>
                 </ul>
@@ -109,39 +109,39 @@
         <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
         <div class="row">
             <div class="col-md-8">
-                <h2><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>     Pour nous envoyer un message</h2>
+                <h2><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Pour nous envoyer un message</h2>
                 <h4>Veuillez compléter le formulaire ci-dessous.</h4> <br>
                 <form name="sentMessage" id="contactForm" novalidate>
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label><i class="fa fa-hand-o-right" aria-hidden="true"></i> Votre nom complet:</label>
-                            <input type="text" class="form-control" placeholder="Nom complet *" id="name" required data-validation-required-message="Merci d'indiquer votre nom.">
+                            <label><i class="fa fa-hand-o-right" aria-hidden="true"></i> Votre nom complet et votre prénom<span style="color:red;">*</span> : </label>
+                            <input type="text" class="form-control" placeholder="NOM Prénom" id="name" required data-validation-required-message="Merci d'indiquer votre nom.">
                             <p class="help-block"></p>
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label><i class="fa fa-hand-o-right" aria-hidden="true"></i> Votre numéro de téléphone:</label>
-                            <input type="tel" class="form-control" placeholder="Numéro de téléphone *" id="phone" required data-validation-required-message="Merci d'indiquer votre numéro de téléphone.">
+                            <label><i class="fa fa-hand-o-right" aria-hidden="true"></i> Votre numéro de téléphone : </label>
+                            <input type="tel" class="form-control" placeholder="Numéro de téléphone *" id="phone">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label><i class="fa fa-hand-o-right" aria-hidden="true"></i> Votre adresse email:</label>
-                            <input type="email" class="form-control" placeholder="Adresse Email *" id="email" required data-validation-required-message="Merci d'indiquer votre adresse email.">
+                            <label><i class="fa fa-hand-o-right" aria-hidden="true"></i> Votre adresse email <span style="color:red;">*</span> : </label>
+                            <input type="email" class="form-control" placeholder="exemple@mail.com" id="email" required data-validation-required-message="Merci d'indiquer votre adresse email.">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label><i class="fa fa-hand-o-right" aria-hidden="true"></i> Votre Message:</label>
-                            <textarea rows="10" cols="100" class="form-control" placeholder="Message *" id="message" required data-validation-required-message="Merci d'entrer votre message" maxlength="999" style="resize:none"></textarea>
+                            <label><i class="fa fa-hand-o-right" aria-hidden="true"></i> Votre Message <span style="color:red;">*</span> : </label>
+                            <textarea rows="10" cols="100" class="form-control" placeholder="..." id="message" required data-validation-required-message="Merci d'entrer votre message" maxlength="999" style="resize:none"></textarea>
                         </div>
                     </div>
                     <div id="success"></div>
                     <!-- For success/fail messages -->
                     <div class="row">
                         <div class="col-md-4">
-                            <p>* Champs Obligatoires</p> </div>
+                            <p style="color:red;">* Champs Obligatoires</p> </div>
                     </div>
                     <button type="submit" class="btn btn-primary">Envoyer <i class="fa fa-check" aria-hidden="true"></i></button>
                 </form>
