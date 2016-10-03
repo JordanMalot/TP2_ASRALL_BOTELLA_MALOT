@@ -39,3 +39,8 @@ nav ul li.active {
     color: white;
 }
 
+.nav-prog div a {
+    width: 100%;
+    margin-bottom:2px;
+}
+
